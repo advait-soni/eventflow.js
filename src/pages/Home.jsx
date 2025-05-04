@@ -7,14 +7,16 @@ export default function Home() {
 
   return (
     <>
-      <p>Hello</p>
-      <Editor
-        height="90vh"
-        defaultLanguage="javascript"
-        defaultValue="// start the javascript magic"
-        theme={"vs-dark"}
-        onChange={handleEditorChange}
-      />
+      <div>
+        <Editor
+          height="80vh"
+          defaultLanguage="javascript"
+          defaultValue="// start the javascript magic"
+          theme={"vs-dark"}
+          onChange={handleEditorChange}
+          width="80vh"
+        />
+      </div>
     </>
   );
 }

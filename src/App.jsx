@@ -1,11 +1,18 @@
-import Home from './pages/Home'
+import Home from "./pages/Home";
+import { Box } from "@chakra-ui/react";
 
 function App() {
   return (
     <>
-     <Home/>
+      <Box
+        bgImage="url('https://wallpaperaccess.com/full/84254.jpg')"
+        bgSize="cover"
+        minHeight="100vh"
+      >
+        <Home />
+      </Box>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
