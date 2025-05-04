@@ -8,6 +8,9 @@ function App() {
         bgImage="url('https://wallpaperaccess.com/full/84254.jpg')"
         bgSize="cover"
         minHeight="100vh"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
       >
         <Home />
       </Box>
