@@ -7,15 +7,19 @@ export default function Home() {
     console.log("value", value)
   }
 
-  const options ={}
+  const options = {
+    minimap: {
+      enabled: false,
+    }
+  }
 
   return (
     <>
       <Box
         borderColor="pink.400"
         borderRadius="10px"
-        borderWidth="5px"
-        boxShadow="0 10px 90px -3px rgba(236, 72, 153, 0.9), 0 4px 6px -2px rgba(236, 72, 153, 0.3)"
+        borderWidth="4px"
+        boxShadow="0 10px 70px -3px rgba(236, 72, 153, 0.9), 0 4px 6px -2px rgba(236, 72, 153, 0.3)"
       >
         <Editor
           height="80vh"
@@ -23,12 +27,9 @@ export default function Home() {
           defaultValue={DEFAULT_CODE}
           theme={"vs-dark"}
           onChange={handleEditorChange}
-          width="80vh"
-          options={{
-            minimap: {
-              enabled: false,
-            },
-          }}
+          width="85vh"
+          options={options}
+          
         />
       </Box>
     </>
