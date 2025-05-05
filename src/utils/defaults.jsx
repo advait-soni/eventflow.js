@@ -1,2 +1,2 @@
 
-export const DEFAULT_CODE = `\n console.log('Welcome')`
+export const DEFAULT_CODE = `\n console.log('Welcome') \n // type and run your Javascript code to see and feel it \n  \n function add(a, b){ \n    return a + b \n }  \n \n add(1, 2) \n \n console.log('end')`
