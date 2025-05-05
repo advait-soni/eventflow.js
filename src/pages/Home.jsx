@@ -7,6 +7,8 @@ export default function Home() {
     console.log("value", value)
   }
 
+  const options ={}
+
   return (
     <>
       <Box
@@ -22,6 +24,11 @@ export default function Home() {
           theme={"vs-dark"}
           onChange={handleEditorChange}
           width="80vh"
+          options={{
+            minimap: {
+              enabled: false,
+            },
+          }}
         />
       </Box>
     </>
