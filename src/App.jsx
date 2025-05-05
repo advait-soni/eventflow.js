@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Box
-        bgImage="url('https://wallpaperaccess.com/full/84254.jpg')"
+        bgColor="gray.950"
         bgSize="cover"
         minHeight="100vh"
         display="flex"
